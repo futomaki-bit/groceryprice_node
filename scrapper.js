@@ -2,10 +2,7 @@
 
 const cheerio = require('cheerio')
 const request = require('request')
-const express = require('express')
 const fs = require('fs')
-
-const app = express()
 
 request({
   method: 'GET',
