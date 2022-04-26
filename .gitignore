@@ -3418,3 +3418,11 @@ node_modules/accepts/HISTORY.md
 node_modules/.bin/mime.ps1
 node_modules/.bin/mime.cmd
 node_modules/.bin/mime
+node_modules/python-shell/CHANGELOG.md
+node_modules/python-shell/index.d.ts
+node_modules/python-shell/index.js
+node_modules/python-shell/index.js.map
+node_modules/python-shell/README.md
+node_modules/python-shell/shouldTest.d.ts
+node_modules/python-shell/shouldTest.js
+node_modules/python-shell/shouldTest.js.map
