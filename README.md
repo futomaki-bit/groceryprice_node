@@ -8,5 +8,11 @@ Track grocery prices
   - request
   - python-shell
 
-### To do:
-- Find link automatically
+
+### 2 versions:
+
+#### autoscrapper.js
+``` automatically find the link ```
+
+### scrapper.js
+``` need to manually paste the link ```
