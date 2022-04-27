@@ -1,5 +1,5 @@
 # groceryprice_node
-Track grocery prices
+Pull MTLGuru's weekly grocery recommendations
 
 ### Requirements:
 - Python 3
@@ -8,7 +8,6 @@ Track grocery prices
   - cheerio
   - request
   - python-shell
-
 
 ### 2 versions:
 #### autoscrapper.js
