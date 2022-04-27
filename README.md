@@ -10,9 +10,9 @@ Pull MTLGuru's weekly grocery recommendations
   - python-shell
 
 ### 2 versions:
-#### autoscrapper.js
+#### autoscraper.js
 ``` automatically find the link ```
-### scrapper.js
+### scraper.js
 ``` need to manually paste the link ```
 
 ### How to run
