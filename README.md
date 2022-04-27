@@ -20,7 +20,8 @@ Pull MTLGuru's weekly grocery recommendations
 - Clone the repository
 - Open terminal at the file location
 - npm install cheerio request python-shell
-- run the node.js file with
+- Run the node.js file with
 ``` node autoscraper.js ``` or ``` node scraper.js ```
+- Look at the groceries(new).txt
 
 
