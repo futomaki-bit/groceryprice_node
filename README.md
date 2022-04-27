@@ -22,6 +22,6 @@ Track grocery prices
 - Open terminal at the file location
 - npm install cheerio request python-shell
 - run the node.js file with
-``` node autoscrapper.js ``` or ``` node scrapper.js ```
+``` node autoscraper.js ``` or ``` node scraper.js ```
 
 
