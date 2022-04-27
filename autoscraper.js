@@ -4,8 +4,10 @@ const cheerio = require('cheerio')
 const request = require('request')
 const fs = require('fs')
 
+// Store url containing the grocery list
 var grocerylink = ''
 
+// Request MTLGuru's user profile
 request({
   method: 'GET',
   url: 'https://forums.redflagdeals.com/memberlist.php?mode=viewprofile&u=265863'
@@ -23,6 +25,7 @@ request({
   console.log('link grabbed')
   console.log(grocerylink)
 
+  // Request MTLGuru's grocery list post
   request({
     method: 'GET',
     url: grocerylink,
@@ -32,8 +35,8 @@ request({
     let filter = $('section[class="post_body"] > div > div[class="content"] ');
     console.log('content scraped')
 
-    write(filter.text());
-    organize()
+    write(filter.text()); // write content to test
+    organize() // organize the groceries.txt and put new content to groceries(new).txt
   }); 
 });
 
