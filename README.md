@@ -24,4 +24,7 @@ Pull MTLGuru's weekly grocery recommendations
 ``` node autoscraper.js ``` or ``` node scraper.js ```
 - Look at the groceries(new).txt
 
+### Issue(s):
+- Getting ```[email� protected]``` for content with @ sign
+
 
