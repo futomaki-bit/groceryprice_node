@@ -32,12 +32,15 @@ request({
   }, (err, res, body) => {
     if (err) return console.error(err);
     let $ = cheerio.load(body);
+
+    let title = $('header > div[class="thread_header_titleinfo"] > h1');
+
     let filter = $('section[class="post_body"] > div > div[class="content"] ');
     console.log('content scraped')
 
-    write(filter.text()); // write content to test
+    write(title.text() + " :\n\r" + filter.text()); // write content to test
     organize() // organize the groceries.txt and put new content to groceries(new).txt
-  }); 
+  });
 });
 
 // Writing files with Node.js

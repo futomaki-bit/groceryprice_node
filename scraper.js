@@ -13,9 +13,12 @@ request({
 
   let $ = cheerio.load(body);
 
-  let filter = $('section[class="post_body"] > div > div[class="content"] ');
+  let title = $('header > div[class="thread_header_titleinfo"] > h1');
 
-  write(filter.text());
+  let filter = $('section[class="post_body"] > div > div[class="content"] ');
+  console.log('content scraped')
+
+  write(title.text() + " :\n\r" + filter.text());
   organize();
 });
 
