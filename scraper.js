@@ -6,7 +6,7 @@ const fs = require('fs')
 
 request({
   method: 'GET',
-  url: 'https://forums.redflagdeals.com/multiple-week-28th-april-4th-may-grocery-round-up-quebec-2539052/#p36005628'
+  url: 'https://forums.redflagdeals.com/multiple-week-5th-may-11th-may-grocery-round-up-quebec-2540421/'
 }, (err, res, body) => {
 
   if (err) return console.error(err);
