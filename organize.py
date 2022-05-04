@@ -21,8 +21,8 @@ with open(file_in) as file:
         # if line not empty
         if temp != []:
 
-            # if first char of the line is a number
-            if not temp[0][0].isnumeric() : 
+            # if first char of the line is NOT a number
+            if not temp[0][0].isnumeric() and not temp[0].startswith('FREE') and not temp[0].startswith('BOGO'): 
 
                 # if it ends with : or soon
                 if temp[-1] == ":" or temp[-1] == "soon":
@@ -51,7 +51,7 @@ with open(file_in) as file:
                     print(' '.join(temp))
                     Note = True
 
-            # if first char of the line is NOT a number
+            # if first char of the line is a number
             else:
                 print(temp[0].ljust(9), ' '.join(temp[1:]))
                 
