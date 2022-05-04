@@ -17,7 +17,7 @@ request({
   let link = $('a[class="thread_title"]').attr('href');
   grocerylink = ('https://forums.redflagdeals.com/' + link);
 
-  if (link == 'undefined'){
+  if (link == 'undefined') {
     console.log('link returned as undefined. Try again later')
     process.exit([404])
   }
