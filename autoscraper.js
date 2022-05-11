@@ -35,7 +35,7 @@ request({
 
     let title = $('header > div[class="thread_header_titleinfo"] > h1');
 
-    let filter = $('section[class="post_body"] > div > div[class="content"] ');
+    let filter = $('section[class="post_body"] > div > div[class="content"] ').first();
     console.log('content scraped')
 
     write(title.text() + " :\n\r" + filter.text()); // write content to test
