@@ -10,11 +10,11 @@ var grocerylink = ''
 // Request MTLGuru's user profile
 request({
   method: 'GET',
-  url: 'https://forums.redflagdeals.com/memberlist.php?mode=viewprofile&u=265863'
+  url: 'https://forums.redflagdeals.com/search.php?keywords=&terms=all&author_id=265863&sc=1&sf=firstpost&sr=posts&sk=t&sd=d&st=0&ch=300&t=0'
 }, (err, res, body) => {
   if (err) return console.error(err);
   let $ = cheerio.load(body);
-  let link = $('a[class="thread_title"]').attr('href');
+  let link = $('a[class="post_subject_link"]').attr('href');
   grocerylink = ('https://forums.redflagdeals.com/' + link);
 
   if (link == 'undefined') {
