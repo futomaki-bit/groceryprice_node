@@ -42,11 +42,13 @@ with open(file_in) as file:
 
                 # if not ending with : or soon
                 else:
+
                     # Notes :
 
                     # if first line of note
                     if not Note:
-                        print(' ')
+                        if not temp[0].startswith('save'):
+                            print(' ')
                         
                     print(' '.join(temp))
                     Note = True
