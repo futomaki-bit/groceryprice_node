@@ -10,7 +10,6 @@ file_out = 'groceries(new).txt'
 sys.stdout = open(file_out, 'w')
 
 # Bools
-Head = True # Flag if top of file
 Note = False # Flag if writing notes
 
 with open(file_in) as file:
@@ -25,18 +24,10 @@ with open(file_in) as file:
             if not temp[0][0].isnumeric() and not temp[0].startswith('FREE') and not temp[0].startswith('BOGO'): 
 
                 # if it ends with : or soon
-                if temp[-1] == ":" or temp[-1] == "soon":
+                if temp[-1] == ":" or temp[-1] == "soon" or temp[-1] == "sson":
 
-                    # Grocery Store :
-                    # if not top of the file
-                    if not Head:
-                        print('')
-                        Note = False
-
-                    # if top of the file
-                    if Head:
-                        Head = False
-
+                    # skip line
+                    print('')
                     # print line
                     print(' '.join(temp),sep="")
 
