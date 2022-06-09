@@ -38,7 +38,7 @@ request({
     let filter = $('section[class="post_body"] > div > div[class="content"] ').first();
     console.log('content scraped')
 
-    write(title.text() + " :\n\r" + filter.text()); // write content to test
+    write(grocerylink + " :\n\r" + title.text() + " :\n\r" + filter.text()); // write content to test
     organize() // organize the groceries.txt and put new content to groceries(new).txt
   });
 });
